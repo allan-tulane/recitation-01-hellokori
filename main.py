@@ -104,7 +104,7 @@ def compare_search(sizes=[1e1, 1e2, 1e3, 1e4, 1e5, 1e6, 1e7]):
 	"""
 	answer = []
 	for x in sizes:
-		mylist = range(x)
+		mylist = range(int(x))
 		linear = time_search(linear_search, mylist , -1)
 		binary = time_search(binary_search, mylist, -1)
 		answer.append((x, linear, binary));
@@ -124,3 +124,5 @@ def test_compare_search():
 	assert res[1][0] == 100
 	assert res[0][1] < 1
 	assert res[1][1] < 1
+
+print_results(compare_search())

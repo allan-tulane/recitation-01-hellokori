@@ -1,1 +1,2 @@
-run = "pytest main.py"
+# run = "pytest main.py" #
+run = "pytest test_main.py"
