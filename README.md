@@ -47,11 +47,13 @@ We'll compare the running times of `linear_search` and `binary_search` empirical
 - [ ] 4. Describe the worst case input value of `key` for `linear_search`? for `binary_search`? 
 
 linear_search O(n) if the 'key' is not an element in the list
+
 binary_search O(log n) if the 'key' is not an element in the list
 
 - [ ] 5. Describe the best case input value of `key` for `linear_search`? for `binary_search`? 
 
 linear_search O(1) if the 'key' is equal to the first element of the list
+
 binary_search O(1) if the 'key' is equal to the middle element of the list
 
 - [ ] 6. Complete the `time_search` function to compute the running time of a search function. Note that this is an example of a "higher order" function, since one of its parameters is another function.
