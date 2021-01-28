@@ -1,7 +1,7 @@
 [![Work in Repl.it](https://classroom.github.com/assets/work-in-replit-14baed9a392b3a25080506f3b7b6d57f295ec2978f6f33ec97e36a161684cbe9.svg)](https://classroom.github.com/online_ide?assignment_repo_id=3989346&assignment_repo_type=AssignmentRepo)
 # CMPS 2200  Recitation 01
 
-**Names (Team Members):**_________________________  
+**Names (Team Members):** Sara Jesusa, Kori Vocke, Jamie Aftalion, Benedicte Knudson, Oliver Canosa  
 
 
 In this recitation, we will investigate asymptotic complexity. Additionally, we will get familiar with the various technologies we'll use for collaborative coding.
@@ -46,11 +46,13 @@ We'll compare the running times of `linear_search` and `binary_search` empirical
 
 - [ ] 4. Describe the worst case input value of `key` for `linear_search`? for `binary_search`? 
 
-**TODO: your answer goes here**
+linear_search O(n) if the 'key' is not an element in the list
+binary_search O(log n) if the 'key' is not an element in the list
 
 - [ ] 5. Describe the best case input value of `key` for `linear_search`? for `binary_search`? 
 
-**TODO: your answer goes here**
+linear_search O(1) if the 'key' is equal to the first element of the list
+binary_search O(1) if the 'key' is equal to the middle element of the list
 
 - [ ] 6. Complete the `time_search` function to compute the running time of a search function. Note that this is an example of a "higher order" function, since one of its parameters is another function.
 
@@ -65,6 +67,10 @@ We'll compare the running times of `linear_search` and `binary_search` empirical
 **TODO: your answer goes here**
 
 - [ ] 10. Binary search assumes the input list is already sorted. Assume it takes $\Theta(n^2)$ time to sort a list of length $n$. Suppose you know ahead of time that you will search the same list $k$ times. 
-  + What is worst-case complexity of searching a list of $n$ elements $k$ times using linear search? **TODO: your answer goes here**
-  + For binary search? **TODO: your answer goes here**
-  + For what values of $k$ is it more efficient to first sort and then use binary search versus just using linear search without sorting? **TODO: your answer goes here**
+  + What is worst-case complexity of searching a list of $n$ elements $k$ times using linear search? 
+    O(k*n)
+  + For binary search? 
+  O((n+k) * log n)
+
+  + For what values of $k$ is it more efficient to first sort and then use binary search versus just using linear search without sorting? 
+  k>1
